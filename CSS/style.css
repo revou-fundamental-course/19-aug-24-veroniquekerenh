@@ -1,1 +1,88 @@
 /* Ini CSS */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo-icon{
+    border: 1px solid;
+    height: 50px;
+    width: 50px;
+    background-image: url(https://picsum.photos/200);
+    background-size: cover;
+    border-radius: 50%;
+}
+.nav-item {
+    border: 1px solid;
+    color: orange;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 8px;
+    border-radius: 8px;
+}
+.nav-container {
+    display: flex;
+}
+.banner-img{
+    height: 500px;
+    background-size: cover;
+    background-position: center;
+}
+
+.img-1{
+    background-image: url(../assets/1.JPG);
+}
+.img-2{
+    background-image: url(../assets/2.jpg);
+}
+.img-3{
+    background-image: url(../assets/3.jpg);
+}
+.img-4{
+    background-image: url(../assets/4.JPG);
+}
+.img-5{
+    background-image: url(../assets/5.JPG);
+}
+.img-6{
+    background-image: url(../assets/6.JPG);
+}
+.profile-item{
+    height: 150px;
+}
+.profile-img{
+    background-image: url(https://picsum.photos/1000);
+    background-size: cover;
+    background-position: center;
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+}
+.profile-container{
+    display: flex;
+    justify-content: space-around;
+    text-align: -webkit-center;
+}
+.portofolio-img{
+    height: 600px;
+    background-size: cover;
+    background-position: center;
+}
+.back-button{
+    border: 1px solid;
+    color: orange;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 8px;
+    border-radius: 8px;
+    text-align: center;
+}
+
+@media only screen and (max-width: 480px) {
+    nav{
+        flex-direction: column;
+    }
+
+}

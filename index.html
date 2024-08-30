@@ -3,12 +3,123 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>My Website</title>
     <link rel="stylesheet" href="CSS\style.css">
 </head>
 
 <body>
+    <nav id="home">
+        <header id="back-button">
+            <div class="logo-icon"></div>
+        </header>
+            
+        <section class="nav-container">
+            <a href="#home" class="nav-item">Home</a>
+            <a href="#our-profile" class="nav-item">Our Profile</a>
+            <a href="#portofolio" class="nav-item">Portofolio</a>
+            <a href="#feedback" class="nav-item">Feedback</a>
+        </section>
+    </nav>
 
+    <hr/>
+
+    <main>
+        <article>
+            <header>
+                <h1>Welcome user to our website</h1>
+            </header>
+
+            <p>We hope you find what you need here, user</p>
+            
+            <div class="banner-img img-4"></div>
+            <div class="banner-img img-5"></div>
+            <div class="banner-img img-6"></div>
+
+            <button type="button" onclick="nextSlide(1)">See more</button>
+        </article>
+
+        <hr/>
+
+        <section id="our-profile">
+            <header>
+                <h1>Our Profile</h1>               
+            </header>
+
+            <section class="profile-container">
+                <div class="profile-item">
+                    <div class="profile-img"></div>
+                    <h2>Pharmacist</h2>
+                </div>
+
+                <div class="profile-item">
+                    <div class="profile-img"></div>
+                    <h2>Software Engineer</h2>
+                </div>
+
+                <div class="profile-item">
+                    <div class="profile-img"></div>
+                    <h2>Graphic Design</h2>
+                </div>
+
+                <div class="profile-item">
+                    <div class="profile-img"></div>
+                    <h2>Photography</h2>
+                </div>
+            </section>
+                <div id="home">
+                    <a href="#back-button" class="back-button">Back</a>
+                </div>
+        </section>
+
+        <hr/>
+
+        <section id="portofolio">
+            <header>
+                <h1>Portofolio</h1>
+            </header>
+            <div class="portofolio-img img-1"></div>
+            <div class="portofolio-img img-2"></div>
+            <div class="portofolio-img img-3"></div>
+            <section id="home">
+                <a href="#back-button" class="back-button">Back</a>
+            </section>
+        </section>
+
+        <hr/>
+
+        <section id="feedback">
+            <header>
+                <h1>Feedback</h1>
+            </header>
+            <form>
+                <div>
+                    <label for="name">Name:</label>
+                    <input id="name" type="text" />
+                    <br/><br/>
+                    <label for="message">Message:</label>
+                    <textarea id="message"></textarea>
+                </div>
+                <br/>
+                <button type="button" onclick="formValidation()">Submit</button>
+            </form>
+        
+            <div>
+                From you: <span id="result"></span>
+                <br/>
+                Your Messages: <span id="themessage"></span>
+            </div>
+            <section id="home" style="padding-top: 20px;">
+                <a href="#back-button" class="back-button">Back</a>
+            </section>
+
+        </section>
+    </main>
+    <hr/>
+    <footer>
+        <p>Made by Veronique Kerenh</p>
+    </footer>
+
+    <script src="JS\script.js"></script>
 </body>
 
 </html>
